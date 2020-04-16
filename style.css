@@ -1,13 +1,16 @@
 html{
-    width: 1400px;
+    max-width: 1080px;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: stretch;
+    /* margin-right: auto;
+    margin-left: auto; */
     background: #D1E8E2;
+    margin: auto;
 }
 h1{
     color: #7c795d;
-    font-family: 'Trocchi', serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 45px;
     font-weight: normal;
     line-height: 48px;
@@ -15,7 +18,7 @@ h1{
     margin-top: 20px;
 }
 #viewer{
-    width: 1200px;
+    width: 1080px;
     height: 450px;
     background: white;
     margin-top: 40px;
@@ -25,29 +28,50 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#photo{
+    width: 950px;
+    height: 450px;
+    /* width: auto;
+    height: auto; */
+    /* background: blue; */
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    /* box-shadow: 0px 10px 10px 5px grey; */
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    /* justify-content: space-between; */
     margin-right: auto;
     margin-left: auto;
+
 }
 #left-arrow{
     font-size: 50px;
     font-weight: bold;
-    margin-left: -22.5em;
     color: rgba(53, 53, 53, 0.514);
+}
+#left-arrow:hover{
+    cursor: pointer;
 }
 #right-arrow{
     font-size: 50px;
     font-weight: bold;
-    margin-right: 10px;
     color: rgba(53, 53, 53, 0.514);
 }
-#thumbnails{
-    width: 1000px;
+#right-arrow:hover{
+    cursor: pointer;
+}
+/* #thumbnails{
+    width: 1080px;
     display: flex;
     justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
-}
-img{
+} */
+/* img{
     width: 100px;
     border: 3px solid white;
     box-shadow: 0px 10px 5px 0px grey;
@@ -58,6 +82,32 @@ img:hover{
     filter: grayscale(0%);
     transform: scale(1.1);
     cursor: pointer;
-};
+}; */
 
-
+.grey-container{
+    display: block;
+    width: 940px;
+    height: 100px;
+    background: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 450px;
+    left: 330px;
+    padding: 5px;
+}
+#title{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+}
+#description{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0px;
+}

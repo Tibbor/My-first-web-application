@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first web application</title>
-    <link rel="stylesheet" href="style.css">;
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="upper">
     <h1>Healthiest Vegetables on Earth</h1>
-    <section id="viewer">;
+    <div id="viewer">
         <P id="left-arrow">❮</P>
+        <img id="photo">
+        <div class="grey-container">
+          <h2 id="title"></h2>
+          <p id="description"></p>
+        </div>
         <P id="right-arrow">❯</P>
+    </div>
     </section>
   </div>
-  <div id="thumbnails">
-    <img src="photos\broccoli.jpg" alt="">;
-    <img src="photos\brussels-sprouts.jpg" alt="">;
-    <img src="photos\carrots.jpg" alt="">;
-    <img src="photos\garlic.jpg" alt="">;
-    <img src="photos\kale.jpg" alt="">;
-    <img src="photos\peas.jpg" alt="">;
-    <img src="photos\spinach.jpg" alt="">;
-    <img src="photos\swiss-chard.jpg" alt="">;
-  </div>
+  <div id="thumbnails"></div>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  <script src="scripts.js"></script>;
+  <script src="scripts.js"></script>
 </body>
 </html>
