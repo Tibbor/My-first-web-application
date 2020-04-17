@@ -64,25 +64,26 @@ h1{
 #right-arrow:hover{
     cursor: pointer;
 }
-/* #thumbnails{
+#thumbnails{
     width: 1080px;
     display: flex;
     justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
-} */
-/* img{
+}
+.thumbnail{
     width: 100px;
+    height: 100px;
     border: 3px solid white;
     box-shadow: 0px 10px 5px 0px grey;
     filter: grayscale(100%);
     transition: 0.5s;
 }
-img:hover{
+.thumbnail:hover{
     filter: grayscale(0%);
     transform: scale(1.1);
     cursor: pointer;
-}; */
+};
 
 .grey-container{
     display: block;
