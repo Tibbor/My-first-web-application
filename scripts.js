@@ -78,26 +78,38 @@ loadTitle(currentTitle);
 loadDescription(currentDescription);
 
 $('#right-arrow').click(() => {
-  currentPhoto++;
+  if(currentPhoto < 7) {
+    currentPhoto++;}
+  else {currentPhoto = 0;}
   loadPhoto(currentPhoto);
 });
 $('#right-arrow').click(() => {
-  currentTitle++;
+  if(currentTitle < 7) {
+    currentTitle++;}
+  else {currentTitle = 0;}
   loadTitle(currentTitle);
 });
 $('#right-arrow').click(() => {
-  currentDescription++;
+  if(currentDescription < 7) {
+    currentDescription++;}
+  else {currentDescription = 0}
   loadDescription(currentDescription);
 });
 $('#left-arrow').click(() => {
-  currentPhoto--;
+  if(currentPhoto > 1) {
+    currentPhoto--;}
+  else {currentPhoto = 7}
   loadPhoto(currentPhoto);
 });
 $('#left-arrow').click(() => {
-  currentTitle--;
+  if(currentTitle > 1) {
+    currentTitle--;}
+  else {currentTitle = 7}
   loadTitle(currentTitle);
 });
 $('#left-arrow').click(() => {
-  currentDescription--;
+  if(currentDescription > 1) {
+    currentDescription--;}
+  else {currentDescription = 7}
   loadDescription(currentDescription);
 });
